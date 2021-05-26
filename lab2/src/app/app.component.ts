@@ -1,5 +1,5 @@
 import { Component, ViewChild, OnInit } from '@angular/core';
-import { Product } from './product';
+// import { Product } from './product';
 import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
@@ -7,10 +7,10 @@ import { ProductListComponent } from './product-list/product-list.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild('productList')
   productList: ProductListComponent;
-  products: Product[];
+  // products: Product[];
 
   ngOnInit(): void {
     this.productList.products = [

@@ -7,13 +7,15 @@ import { Product } from '../product';
   styleUrls: ['./product-item.component.css']
 })
 export class ProductItemComponent implements OnInit {
+
+
   @Input()
   product: Product;
 
   @Output()
   OnSelected: EventEmitter<ProductItemComponent> = new EventEmitter();
-  isSelected: boolean;
 
+  isSelected: boolean;
 
   constructor() { }
 

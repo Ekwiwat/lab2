@@ -9,8 +9,8 @@ import { ProductItemComponent } from '../product-item/product-item.component';
 })
 export class ProductListComponent implements OnInit {
   @ViewChildren(ProductItemComponent)
-  productItems: QueryList<ProductListComponent>;
-  isSelected: boolean;
+  productItems: QueryList<ProductItemComponent>;
+
 
   products: Product[];
 
@@ -22,6 +22,7 @@ export class ProductListComponent implements OnInit {
 
   selectedProduct(productComponent: ProductItemComponent) {
     alert(`Product ${productComponent.product.name} selected`);
+
     this.productItems.forEach(p => {
       p.isSelected = false;
     });
@@ -29,5 +30,3 @@ export class ProductListComponent implements OnInit {
   }
 
 }
-
-
