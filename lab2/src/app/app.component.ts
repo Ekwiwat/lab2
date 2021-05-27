@@ -18,19 +18,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.productList.products = this.backendService.getProducts();
-    // [
-    //   {
-    //     name: 'ส้มโอ',
-    //     price: 111
-    //   },
-    //   {
-    //     name: 'แตงโม',
-    //     price: 222
-    //   }, {
-    //     name: 'มะพร้าวน้ำหอม',
-    //     price: 333
-    //   }
-    // ];
 
   }
 }
