@@ -2,6 +2,6 @@
     width: 200px;
     display: inline-block; border: 1px solid gray; text-align: center;
     }
-    .selected {
+.selected {
     background: lightgrey;
     }
