@@ -10,14 +10,16 @@ import { ProductListComponent } from './catalog/product-list/product-list.compon
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  constructor(private backendService: BackendService) { }
+  // constructor(private backendService: BackendService) { }
 
-  @ViewChild('productList')
-  productList: ProductListComponent;
+  // @ViewChild('productList')
+  // productList: ProductListComponent;
 
 
   ngOnInit(): void {
-    this.productList.products = this.backendService.getProducts();
+
+
+    // this.productList.products = this.backendService.getProducts();
 
   }
 }
